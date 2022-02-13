@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+}
+
+body{
+    background-color: #444;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: #ddd;
+    width: 600px; 
+    height: 125px;
+    border: solid 1px black;
+    border-radius: 30px;
+    display:grid;
+    grid-template-areas:
+    "left right"
+    "left right"
+    "bottom bottom";
+    grid-template-rows: 50px 5px;
+    grid-template-columns: 50% 50%;
+    border-radius: 30px;
+}
+
+.label{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.name{
+    grid-area:left;
+}
+.amount{
+    grid-area:right;
+}
+.submit{
+    grid-area: bottom;
+}
+
+#amount, #name, #submit{
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+#submit{
+    background-color: rgb(163, 222, 230);
+    height: 30px;
+}
